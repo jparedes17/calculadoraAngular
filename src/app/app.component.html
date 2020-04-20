@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+      <div class="base">
+        <h3>CASIO</h3>
+        <div class="maindisplay" >
+          <div class="subdisplay">{{ subText }}</div>
+          {{ mainText}}
+        </div>
+        <div class="keypad">
+          <div class="clear">
+            <button class="keys ackey" colspan="3" (click)="allClear()">AC</button>
+          </div>
+          <div class= "numbers">
+            <div>
+              <button class="keys numkey" (click)="pressKey('7')">7</button>
+              <button class="keys numkey" (click)="pressKey('8')">8</button>
+              <button class="keys numkey" (click)="pressKey('9')">9</button>
+            </div>
+
+            <div>
+              <button class="keys numkey" (click)="pressKey('4')">4</button>
+              <button class="keys numkey" (click)="pressKey('5')">5</button>
+              <button class="keys numkey" (click)="pressKey('6')">6</button>
+            </div>
+
+            <div>
+              <button class="keys numkey" (click)="pressKey('1')">1</button>
+              <button class="keys numkey" (click)="pressKey('2')">2</button>
+              <button class="keys numkey" (click)="pressKey('3')">3</button>
+            </div>
+
+            <div>
+              <button class="keys numkey" (click)="pressKey('0')">0</button>
+              <button class="keys numkey" (click)="pressKey2()">.</button>
+            <button class="keys equalkey" (click)="getanswer('=')">=</button>
+            </div>
+          </div>
+          <div class="operations">
+            <button class="keys opkey" (click)="getanswer('/')">/</button>
+            <button class="keys opkey" (click)="getanswer('x')">x</button>
+            <button class="keys opkey" (click)="getanswer('-')">-</button>
+            <button class="keys opkey" (click)="getanswer('+')">+</button>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
